@@ -1,0 +1,2 @@
+2024/01/15 11:50:59 [error] 7#7: *32 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 172.18.0.1, server: vguidoni.42.fr, request: "GET /favicon.ico HTTP/1.1", host: "www.localhost", referrer: "https://www.localhost/"
+2024/01/15 12:04:41 [error] 7#7: *11 rewrite or internal redirection cycle while internally redirecting to "/index.html", client: 172.22.0.1, server: vguidoni.42.fr, request: "GET /favicon.ico HTTP/1.1", host: "vguidoni.42.fr", referrer: "https://vguidoni.42.fr/"
