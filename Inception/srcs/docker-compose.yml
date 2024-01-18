@@ -79,3 +79,76 @@ networks:
     inception:
       driver: bridge
 
+      # "Docker"
+# i docker sono una piattaforma leggera per la gestione di app e siti
+# i docker e' una unita' standardizzata che garantishe che tutte le app 
+#possono essere eseguite correttamente su qualsiasi ambiente che supporti 
+#i docker
+      
+      # "Docker-compose "
+#il Docker-compose semplifica la 
+#gestione di app composte da piu' contenitori
+#premettendo di definire l'intera infrastruttura 
+#dell'app in un singolo file
+
+
+    # "docker-network"
+#consente di definire le reti personalizzate alle quali 
+#i servizzi docker possono essere collegati
+# Permentte di isolare e gestire le comunicazioni tra container
+#migliorando la sicurezza
+# In sintesi specificano come i conteiner possono comunicare tra loro
+
+      # Container(o contenitore)
+# Il contenitore e' un'istanza eseguibile di un'immagine
+# e' una unita' leggere che gestishe tutte le dipendenze 
+# in maniera isolata.
+# separandolo dal sistema operativo dell'host
+
+
+      # "Immagine"
+# l' immagine e' una pacchetto leggero che  include
+# un'app e tutte le sue iformazioni per eseguirla.
+# Funziona da modello per creare e avviare i contenitori 
+#Docker
+
+#MARIADB
+  #   "Mariadb "
+  # serve la gestione dei database, e' strettamente 
+  # compatibile con la MySQL
+
+  #   "MySQL"
+  # e' un database per gestire dati di siti web
+  #famoso per la sua velocita' e affidabilita'
+
+  # comando
+      #{docker exec -it mariadb sh
+          #mariadb
+      #docker exec -it mariadb mariadb}
+          #show databases; (ricorda il ";")
+          
+          #use wordpress;
+          #show tables;
+          #select * from wp_users
+
+#WORDPRESS
+  #   Wordpress
+#serve per la creazione e gestione di siti web e blog.
+#da la possibilita' di di personalizzare il sito web
+# attraverso i plugin, famoso per la semlicita' d'uso
+
+
+
+#OCSP una convalida della catena di certificati client
+#        comandi nginx
+#1)$ docker build -t (name_images:1.0) /srcs/requirement/nginx /// costruire una immagine
+#2)$ docker run -p 443:443 vguidoni-42:1.0
+#4) verdere le immagini che crei 
+    # $ docker ps -a
+
+#4)elseminare tutti i container attivi e in stop
+    # $ docker rm -f $(docker ps -aq)
+    # $ docker rm(o rmi) -f $(docker ps -aq)
+
+#5) cartelle nascoste
+    # $ docker exec -it (name servizio)
