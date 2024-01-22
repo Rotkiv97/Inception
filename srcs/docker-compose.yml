@@ -113,7 +113,7 @@ networks:
 #Docker
 
 #MARIADB
-  #   "Mariadb "
+  #   "Mariadb"
   # serve la gestione dei database, e' strettamente 
   # compatibile con la MySQL
 
